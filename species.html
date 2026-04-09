@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cockroach Species | Insight Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Cockroach Insight Hub</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="biology.html">Biology</a>
+        <a class="active" href="species.html">Species</a>
+        <a href="control.html">Control</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Species Identification Workspace</h1>
+      <p class="small">Filter by habitat and keyword to focus on likely structural pests in your context.</p>
+    </section>
+
+    <section>
+      <div class="controls">
+        <input id="species-query" type="search" placeholder="Search name or traits (e.g., kitchen, drain, large)" />
+        <select id="species-habitat">
+          <option>All</option>
+          <option>Indoor</option>
+          <option>Sewer/Outdoor</option>
+          <option>Damp Areas</option>
+          <option>Outdoor</option>
+        </select>
+      </div>
+
+      <div class="grid grid-3" data-species-list></div>
+    </section>
+
+    <section class="card">
+      <h2>Field Tips</h2>
+      <ul>
+        <li>Capture photos with size references (coin, ruler, tile size) for better identification confidence.</li>
+        <li>Document location, time, and environmental conditions during each sighting.</li>
+        <li>Use trend logs to distinguish occasional intrusions from reproducing populations.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">Species-level insight improves treatment accuracy and reduces unnecessary pesticide load.</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

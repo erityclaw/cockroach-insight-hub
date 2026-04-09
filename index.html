@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cockroach Insight Hub | Evidence-Based Guide</title>
+  <meta name="description" content="Professional multi-page guide to cockroach biology, species identification, and integrated control strategies." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Cockroach Insight Hub</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="active" href="index.html">Overview</a>
+        <a href="biology.html">Biology</a>
+        <a href="species.html">Species</a>
+        <a href="control.html">Control</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Professional Reference on Cockroach Risk, Biology, and Management</h1>
+        <p>
+          This site provides a practical and evidence-based overview of cockroaches, including health implications,
+          species patterns, and integrated pest management (IPM) methods suitable for homes, food businesses, and facilities teams.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid grid-3">
+        <article class="card">
+          <h3>Global Reach</h3>
+          <p class="kpi">4,600+</p>
+          <p>Known cockroach species worldwide, with a smaller subset strongly associated with human structures.</p>
+        </article>
+        <article class="card">
+          <h3>Urban Relevance</h3>
+          <p class="kpi">~30</p>
+          <p>Species are considered significant structural pests in urban and peri-urban environments.</p>
+        </article>
+        <article class="card">
+          <h3>High-Risk Driver</h3>
+          <p class="kpi">Moisture</p>
+          <p>Water availability plus food residue is the strongest predictor of persistent infestation pressure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid grid-2">
+        <article class="card">
+          <h2>Interactive Facility Risk Calculator</h2>
+          <p class="small">Rate each factor from 0 (best) to 100 (worst), then calculate risk.</p>
+          <form id="risk-form" class="grid">
+            <label>Food residue exposure <input type="range" name="food" min="0" max="100" value="40"></label>
+            <label>Moisture/leak pressure <input type="range" name="moisture" min="0" max="100" value="50"></label>
+            <label>Clutter/harborage density <input type="range" name="clutter" min="0" max="100" value="35"></label>
+            <label>Recent sightings frequency <input type="range" name="sightings" min="0" max="100" value="30"></label>
+            <button type="submit">Calculate Risk</button>
+          </form>
+          <p><strong>Risk score:</strong> <span id="risk-score">0</span>/100</p>
+          <div id="risk-bar" class="progress"><div></div></div>
+          <p id="risk-summary" class="small">Submit the form to generate guidance.</p>
+        </article>
+
+        <article class="card">
+          <h2>Decision Priorities</h2>
+          <ol>
+            <li><strong>Eliminate resources:</strong> food, moisture, shelter.</li>
+            <li><strong>Block ingress:</strong> seal structural gaps and service penetrations.</li>
+            <li><strong>Monitor continuously:</strong> use sticky traps and inspection logs.</li>
+            <li><strong>Treat precisely:</strong> target harborages with minimal broad-spray use.</li>
+          </ol>
+          <div class="notice">
+            Heavy daytime sightings often indicate established population pressure and require rapid intervention.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Built as a static, multi-page educational reference. Navigate to Biology, Species, and Control for deeper tools.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

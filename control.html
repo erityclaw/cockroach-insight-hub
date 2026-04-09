@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cockroach Control | Insight Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Cockroach Insight Hub</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="biology.html">Biology</a>
+        <a href="species.html">Species</a>
+        <a class="active" href="control.html">Control</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Integrated Pest Management (IPM) Planner</h1>
+      <p class="small">Build a multi-layered prevention and suppression strategy using operational controls.</p>
+    </section>
+
+    <section class="grid grid-2">
+      <article class="card">
+        <h2>Control Selector</h2>
+        <p class="small">Choose actions to estimate prevention strength.</p>
+        <div data-ipm-list></div>
+      </article>
+
+      <article class="card">
+        <h2>Projected Prevention Strength</h2>
+        <p class="kpi"><span id="ipm-total">0</span>/100</p>
+        <p id="ipm-detail" class="small">Select controls to estimate expected prevention strength.</p>
+        <h3>Recommended sequence</h3>
+        <ol>
+          <li>Immediate sanitation + leak control</li>
+          <li>Structural sealing and entry-point reduction</li>
+          <li>Monitoring grid deployment (weekly checks)</li>
+          <li>Targeted bait rotation with professional oversight</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Escalation Triggers</h2>
+      <ul>
+        <li>Repeated daytime sightings in food prep or patient-care areas.</li>
+        <li>Nymph clusters in multiple rooms, suggesting active reproduction.</li>
+        <li>No trap-count reduction after 2 to 3 intervention cycles.</li>
+      </ul>
+      <p class="notice">If infestation persists, consult a licensed pest management professional and review sanitation workflows end-to-end.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">Effective control is procedural, monitored, and sustained, not one-time spraying.</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

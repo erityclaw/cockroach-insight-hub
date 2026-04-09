@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cockroach Biology | Insight Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Cockroach Insight Hub</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a class="active" href="biology.html">Biology</a>
+        <a href="species.html">Species</a>
+        <a href="control.html">Control</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Biology and Lifecycle Dynamics</h1>
+      <p class="small">Understanding anatomy and reproduction helps prioritize control timing and methods.</p>
+    </section>
+
+    <section class="grid grid-2" data-tabs>
+      <article class="card">
+        <div class="tabs">
+          <button class="tab-btn active" data-target="anatomy">Anatomy</button>
+          <button class="tab-btn" data-target="behavior">Behavior</button>
+          <button class="tab-btn" data-target="reproduction">Reproduction</button>
+        </div>
+        <div id="anatomy" class="tab-panel active">
+          <h2>Anatomy</h2>
+          <p>Flattened body form supports movement through narrow gaps. Antennae provide high chemical sensitivity for food and pheromone trails.</p>
+        </div>
+        <div id="behavior" class="tab-panel">
+          <h2>Behavior</h2>
+          <p>Nocturnal activity dominates. Sudden daytime activity can signal crowding or resource depletion in harborages.</p>
+        </div>
+        <div id="reproduction" class="tab-panel">
+          <h2>Reproduction</h2>
+          <p>Egg case production rates vary by species and temperature. Warm, humid interiors accelerate population growth.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Lifecycle Explorer</h2>
+        <label for="lifecycle-stage">Choose stage</label>
+        <select id="lifecycle-stage">
+          <option value="egg">Egg case (ootheca)</option>
+          <option value="nymph">Nymph</option>
+          <option value="adult">Adult</option>
+        </select>
+        <p id="lifecycle-output"></p>
+        <p class="small">Operational note: treatment intervals should align with nymph emergence windows where possible.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Quick Knowledge Quiz</h2>
+      <form id="quiz-form" class="grid">
+        <label>1) Which condition most strongly supports infestation persistence?
+          <select name="q1">
+            <option value="a">Bright daylight</option>
+            <option value="b">Moisture + food residue</option>
+            <option value="c">Low indoor temperature</option>
+          </select>
+        </label>
+
+        <label>2) Nymphs are best described as:
+          <select name="q2">
+            <option value="a">Immature stages lacking full wing development</option>
+            <option value="b">Egg cases only</option>
+            <option value="c">Unrelated insects</option>
+          </select>
+        </label>
+
+        <label>3) Daytime activity often indicates:
+          <select name="q3">
+            <option value="a">Population collapse</option>
+            <option value="b">No infestation</option>
+            <option value="c">Potential crowding or disturbance in harborages</option>
+          </select>
+        </label>
+
+        <button type="submit">Check Answers</button>
+      </form>
+      <p id="quiz-result" class="small"></p>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">Biology insights support targeted, lower-toxicity management strategies.</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
