@@ -1,15 +1,15 @@
 :root {
-  --bg: #0f172a;
-  --bg-soft: #111827;
-  --card: #1f2937;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --accent: #22c55e;
-  --accent-2: #38bdf8;
+  --bg: #07130d;
+  --bg-soft: #0b1b13;
+  --card: #10261a;
+  --text: #ecfdf5;
+  --muted: #a7c9b4;
+  --accent: #4ade80;
+  --accent-2: #86efac;
   --danger: #f97316;
   --max: 1120px;
   --radius: 14px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
 * { box-sizing: border-box; }
@@ -17,7 +17,7 @@ html, body { margin: 0; padding: 0; }
 body {
   font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #0b1222 0%, #0f172a 40%, #0b1020 100%);
+  background: linear-gradient(180deg, #06110c 0%, #0b1b13 40%, #08140e 100%);
   line-height: 1.6;
 }
 
@@ -31,7 +31,7 @@ header {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(8px);
-  background: rgba(10, 16, 32, 0.75);
+  background: rgba(6, 17, 12, 0.78);
   border-bottom: 1px solid rgba(148, 163, 184, 0.2);
 }
 
@@ -64,16 +64,16 @@ header {
 
 .nav-links a.active,
 .nav-links a:hover {
-  background: rgba(34, 197, 94, 0.15);
-  border-color: rgba(34, 197, 94, 0.4);
+  background: rgba(74, 222, 128, 0.18);
+  border-color: rgba(74, 222, 128, 0.45);
   text-decoration: none;
 }
 
 .hero {
   padding: 5rem 0 3rem;
   background:
-    radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.2), transparent 40%),
-    radial-gradient(circle at 80% 0%, rgba(34, 197, 94, 0.25), transparent 35%);
+    radial-gradient(circle at 10% 10%, rgba(134, 239, 172, 0.22), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(74, 222, 128, 0.28), transparent 35%);
 }
 
 .hero h1 {
@@ -96,7 +96,7 @@ header {
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
 .card {
-  background: linear-gradient(180deg, rgba(31, 41, 55, 0.9) 0%, rgba(17, 24, 39, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(16, 38, 26, 0.92) 0%, rgba(11, 27, 19, 0.97) 100%);
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: var(--radius);
   padding: 1rem 1.1rem;
@@ -136,7 +136,7 @@ input, select, button, textarea {
 
 button {
   cursor: pointer;
-  background: linear-gradient(90deg, #16a34a, #0284c7);
+  background: linear-gradient(90deg, #16a34a, #65a30d);
   border: none;
 }
 
@@ -169,8 +169,8 @@ button:hover { filter: brightness(1.05); }
 }
 
 .tab-btn.active {
-  border-color: rgba(34, 197, 94, 0.7);
-  background: rgba(34, 197, 94, 0.15);
+  border-color: rgba(74, 222, 128, 0.7);
+  background: rgba(74, 222, 128, 0.18);
 }
 
 .tab-panel { display: none; }
@@ -190,7 +190,7 @@ button:hover { filter: brightness(1.05); }
 .progress > div {
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, #f97316, #16a34a);
+  background: linear-gradient(90deg, #84cc16, #16a34a);
   transition: width 0.3s ease;
 }
 
